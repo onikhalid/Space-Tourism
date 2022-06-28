@@ -25,7 +25,7 @@ const destContainer = document.querySelector('.dmain__options')
 const destName = document.querySelector('.dmain__title')
 
  const Destination = async()=>{
-     let data = await fetch('https://drive.google.com/file/d/1FxSC0wB0a5Imt1iPsptDHEAeV2t3uRM7/view?usp=sharing');
+     let data = await fetch('data.json');
      let orgData = await data.json()
      let destination =await  orgData.destinations
 
@@ -87,7 +87,7 @@ const crewImg = document.querySelector('.cmain__img')
 const crewContainer = document.querySelector('.cmain__title')
 
  const Crew = async()=>{
-     let data = await fetch('../data.json');
+     let data = await fetch('data.json');
      let orgData = await data.json()
      let crews =await  orgData.crew
      
@@ -205,7 +205,7 @@ const techImg = document.querySelector('.tmain__img')
 const techContainer = document.querySelector('.tmain__title')
 
  const Tech = async()=>{
-     let data = await fetch('../data.json');
+     let data = await fetch('data.json');
      let orgData = await data.json()
      let techs =await  orgData.technology
 
