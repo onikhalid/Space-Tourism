@@ -25,11 +25,6 @@ The Challenge on front-end Mentor specified that  upon completion of the project
 - See hover states for all interactive elements on the page
 - View each page and be able to toggle between the tabs to see new information
 
-### Screenshot
-
-![Screenshot](./screenshot.png)
-
-
 
 ## My process
 
