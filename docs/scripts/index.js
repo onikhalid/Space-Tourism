@@ -25,7 +25,7 @@ const destContainer = document.querySelector('.dmain__options')
 const destName = document.querySelector('.dmain__title')
 
  const Destination = async()=>{
-     let data = await fetch('https://drive.google.com/file/d/1FxSC0wB0a5Imt1iPsptDHEAeV2t3uRM7/view?usp=sharing');
+     let data = await fetch('../data.json');
      let orgData = await data.json()
      let destination =await  orgData.destinations
 
