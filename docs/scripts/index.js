@@ -2,18 +2,37 @@
 const ham = document.querySelector('.header__navMobile');
 const mobileMenu = document.querySelector('.header__navMobile__links');
 
-ham.addEventListener('click', ()=>{
-    if (ham.classList.contains('open')){
-        ham.classList.remove('open')
-        mobileMenu.classList.remove('showMenu')
-        mobileMenu.classList.add('hideMenu')
+document.addEventListener('click', (event)=>{
+    let menuOpen = mobileMenu.contains(event.target)
+    let hamOpen = ham.contains(event.target)
+
+    if (!menuOpen){
+        if(hamOpen){
+            if (ham.classList.contains('open')){
+                ham.classList.remove('open')
+                mobileMenu.classList.remove('showMenu')
+                mobileMenu.classList.add('hideMenu')
+            }
+            else{
+                ham.classList.add('open')
+                mobileMenu.classList.add('showMenu')
+                mobileMenu.classList.remove('hideMenu')
+                mobileMenu.classList.remove('hidden')
+            }
+        }
+        else{
+            ham.classList.remove('open')
+            mobileMenu.classList.remove('showMenu')
+            mobileMenu.classList.add('hideMenu')
+        }
     }
-    else{
+   else {
         ham.classList.add('open')
         mobileMenu.classList.add('showMenu')
         mobileMenu.classList.remove('hideMenu')
         mobileMenu.classList.remove('hidden')
     }
+
 })
 
 
