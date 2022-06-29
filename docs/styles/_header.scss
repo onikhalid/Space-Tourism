@@ -1,0 +1,177 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 1.5rem;
+    background-image: url(../assets/home/background-home-mobile.jpg);
+    background-size: cover;
+    padding: 0 2.5rem 2.5rem 2.5rem;
+    
+    
+    @media(min-width: 760px) {
+            background-image: url(../assets/home/background-home-tablet.jpg);
+            background-size: cover;
+            padding: 0 0 5rem 0;
+            &__nav{
+                padding: 2.5rem 0 2.5rem 2.5rem !important;
+            }
+    }
+    @media(min-width: 1024px) {
+        background-image: url(../assets/home/background-home-desktop.jpg);
+        background-size: cover;
+    }
+
+    &__nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2.5rem 0;
+
+        &Mobile{
+            z-index: 3;
+
+            span.hamburger{
+                display: block;
+                background-color: var(--clr-acc);
+                width: 25px;
+                height: 3px;
+                transform-origin: 0px 2.5px;
+                transition: all 300ms ease-in-out;
+            }
+            & > span{
+                margin-bottom: 6px;
+            }
+            &.open{
+                & > span:nth-child(1){
+                    transform: rotate(45deg);
+                }
+                & > span:nth-child(2){
+                    opacity: 0;
+                }
+                & > span:nth-child(3){
+                    transform: rotate(-45deg);
+                }
+            }
+            &__links{
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                height: 100vh;
+                width: 60vw;
+                margin: 0 auto;
+                background-color: rgba(11 ,13 ,23, 0.4);
+                backdrop-filter: blur(40px);
+                padding: 9.5rem 2rem;
+                z-index: 2;
+                font-weight: 900;
+
+                a{
+                    text-transform: uppercase;
+                }
+            }
+
+        }
+        
+        &Tablet{
+            display: flex;
+            gap: 2.5rem;
+            background-color: rgba(39, 40, 43, 0.4);
+            backdrop-filter: blur(20px);
+            padding: 0 12vw 0 7vw;
+            text-transform: uppercase;
+            a{
+                padding:  2rem 0;
+            }
+            & > a:nth-child(1){
+                border-bottom: solid 3px var(--clr-white);
+            }
+        }
+        &Desktop{
+            display: flex;
+            gap: 2.5rem;
+            background-color: rgba(44, 49, 73, 0.4);
+            backdrop-filter: blur(20px);
+            padding: 0 15vw 0 10vw;
+            text-transform: uppercase;
+            a{
+                padding:  1.5rem 0;
+            }
+            & > a:nth-child(1){
+                border-bottom: solid 3px var(--clr-white);
+            }
+            & > a:hover{
+                border-bottom: 3px solid grey;
+            }
+        }
+    }
+
+    &__content{
+        @media (min-width: 750px) {
+            gap: 2rem;
+            margin-top: 2rem;
+            padding: 12.5vw;
+            padding-top: 15vw;
+            padding-bottom: 9.5vw;
+        }
+        @media (min-width: 1024px) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            padding: 12.5vw;
+            padding-top: 7.5vw;
+            padding-bottom: 5vw;
+        }
+    }
+    
+    &__text{
+        @media (min-width: 750px) {
+            max-width: 50ch;
+            margin: 0 auto;
+            transform: scale(1.15);
+        }
+        @media (min-width: 1024px) {
+            align-items: flex-start;
+            max-width: 55ch;
+            margin: initial;
+            transform: scale(1.15);
+        }
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    &__cta{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        background-color: var(--clr-white);
+        color: var(--clr-dark);
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        font-size: 1.2rem !important;
+        margin: 6rem auto;
+        transition: all 300ms ease-in-out;
+
+        &:hover{
+            animation: beam linear 1500ms infinite  ;
+        }
+        @media (min-width: 750px) {
+            transform: scale(1.3);
+            margin-top: 10rem;
+        }
+        @media (min-width: 1024px) {
+            transform: scale(1.5);
+            margin: 0;
+        }
+    }
+}
+
