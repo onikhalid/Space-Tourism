@@ -40,7 +40,7 @@ The Challenge on front-end Mentor specified that  upon completion of the project
   - Mobile-first workflow
 - JS
   - Vanilla JS
-  - Fetch from local json file
+  - Fetch method
   - Async/Await functions
 
 
