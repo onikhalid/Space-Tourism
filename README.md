@@ -29,15 +29,19 @@ The Challenge on front-end Mentor specified that  upon completion of the project
 ## My process
 
 ### Built with
-
-- Semantic HTML5 markup
-- Vanilla CSS
-- SCSS
-- CSS custom properties
-- CSS Grid
-- Flexbox
-- Mobile-first workflow
-- Vanilla JS
+- HTML
+  - Semantic HTML5 markup
+  - BEM syntax
+- CSS
+  - SCSS/SASS
+  - CSS custom properties
+  - CSS Grid
+  - Flexbox
+  - Mobile-first workflow
+- JS
+  - Vanilla JS
+  - Fetch from local json file
+  - Async/Await functions
 
 
 ### What I learned
@@ -64,13 +68,13 @@ const destContainer = document.querySelector('.dmain__options')
 const destName = document.querySelector('.dmain__title')
 
  const Destination = async()=>{
-     let data = await fetch('../html/data.json');
+     let data = await fetch('data.json');
      let orgData = await data.json()
      let destination =await  orgData.destinations
   }
 }
 ```
-- DRY CODE: 
+- DRY CODE/TAKIN DIFFERENT APPROACHES TO SOLVING A SINGLE PROBLEM: 
   I experienced first hand what a DRY code looks like by doing the same thing using two different approaches; for the destination section I wrote a seperate HTML file for each option whereas for the crew and technology section, I used JS to manipulate the content of the page depending on the selected option
 ```js
         // MAKE OPTION CIRCLES DISPLAY SPECIFIC CONTENTS
@@ -88,9 +92,9 @@ const destName = document.querySelector('.dmain__title')
 
 During the course of completing this project, I came to realize some weak points or areas where I need to look to improve on in future projects, some of th
 - BETTER JS LOGIC: 
- I need to lear how to solve problems better with Javascript, I was stuck at some point during the project
+ I need to learn how to solve problems better with Javascript, I was stuck at some point during the project
 - ERROR HANDLING: 
-  I need to learn to fetch data from API's and handle errors better as there was little to no error handling in the code, And on some pages of the project, the console displays some uncaught errors
+  I need to learn how to fetch data from API's and handle errors better as there was little to no error handling in the code, And on some pages of the project, the console displays some uncaught errors, which needlessly to say do not disrupt the code
 - UNEQUAL IMAGES: 
   Working with pictures of unequal sizes and aspect ratio: the pictures provided for the crew section were of unequal sizes and that didnt reflect well in the transition from one page to another
 
@@ -98,6 +102,7 @@ During the course of completing this project, I came to realize some weak points
 ## Author
 
 - Twitter - [@onikhalidayo](https://www.twitter.com/onikhalidayo)
-- Twitter - [onikhalidayo@gmail.com](mailto@onikhalidayo)
+- Gmail - [onikhalidayo@gmail.com](mailto@onikhalidayo)
+- Github - [Oni Khalid Ayòbámi](https://github.com/onikhalid)
 
 
