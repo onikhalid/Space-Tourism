@@ -75,7 +75,7 @@ const destName = document.querySelector('.dmain__title')
 }
 ```
 - DRY CODE/TAKING MULTIPLE DIFFERENT APPROACHES TO SOLVING A PROBLEM: 
-  I experienced first hand what a DRY code looks like by doing the same thing using two different approaches; for the destination section I wrote a seperate HTML file for each option whereas for the crew and technology section, I used JS to manipulate the content of the page depending on the selected option
+  I experienced first hand what a DRY code looks like by doing the same thing using two different approaches; for the destination section I wrote a seperate HTML file for each option, which littered my code with lots of extra files, a problem that was solved for the crew and technology section by using JS to manipulate the content of the page depending on the selected option
 ```js
         // MAKE OPTION CIRCLES DISPLAY SPECIFIC CONTENTS
         let options = document.querySelectorAll('.option')
