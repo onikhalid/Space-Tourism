@@ -1,4 +1,4 @@
-# Khalid Oni - Space tourism website solution from Frontend Mentor
+# Khalid Oni - Space Tourism website solution from Frontend Mentor
 
 This is my solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). 
 
